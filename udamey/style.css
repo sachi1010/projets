@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap ;
+    height: 10vh;
+    background-color: antiquewhite;
+    align-items: center;
+    box-shadow: 0px 3px 5px grey;
+}
+
+ul{
+    display:inline-flex;
+justify-content: space-evenly;
+align-content:center;
+align-items: center;
+flex-wrap:wrap ;
+flex-direction: row;
+}
+
+li{
+    margin:10px;
+    list-style-type: none;   
+}
+#search{
+     height: 40px;
+    width:500px; 
+    border-radius: 20px;
+    text-align:center;
+}
+svg{
+    margin-top: 100px;
+    margin-left: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+a:hover{
+    color: blue;
+}
+button{
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+}
+#sign{
+    background-color: black;
+    color: aliceblue;
+}
+#sign:hover{
+    background-color: gray;
+}
+#login:hover{
+background-color: darkgrey;
+}
+.material-symbols-outlined:hover{
+    color: darkcyan;
+}
+#search:hover{
+    background-color: darkgrey;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;   
+}
+.text{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+h1,h4{
+    line-height:1.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+h4{
+    color: darkgray;
+}
+.gallery{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.datascience{
+    display: inline-flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.courses button{
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: rgb(170, 183, 184);
+}
+.courses{
+    background-color:rgb(229, 231, 233);
+}
+.courses button:hover{
+    background-color:rgb(153, 163, 164);
+}
+td{
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+   margin: 30px;
+}
+table{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
