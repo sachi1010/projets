@@ -114,46 +114,46 @@ h4{
     display: flex;
     justify-content:space-evenly;
     align-items:center;
-    height: 50%;
+    height: 80vh;
     width: 100%;
     flex-wrap: wrap;
 }
 .chatgpt1{
     height: 55vh;
-    width: 44vh;
+    width: 43vh;
     border: 1px solid grey;
-    border-radius: 5px; 
-    box-shadow: 4px 4px 5px lightgray,-4px -4px 5px lightgray;
+    border-radius: 10px; 
+    box-shadow: 3px 3px 8px gray,-3px -3px 8px gray;
     /* flex-wrap: wrap;
       justify-content: center; 
      align-items: center;  */ 
 }
 .chatgpt2{
     height: 55vh;
-    width: 44vh;
+    width: 43vh;
     border: 1px solid grey;
-    box-shadow:4px 4px 5px lightgray,-4px -4px 5px lightgray;   
-    border-radius: 5px;
+    box-shadow:3px 3px 8px gray,-3px -3px 8px gray;   
+    border-radius: 10px;
     /* flex-wrap: wrap; */
     /* justify-content: center;
     align-items: center; */
 }
 .chatgpt3{
     height: 55vh;
-    width: 44vh;  
+    width: 43vh;  
     border: 1px solid grey;
-    box-shadow:4px 4px 4px lightgrey,-4px -4px 5px lightgray;   
-    border-radius: 5px;
+    box-shadow:3px 3px 8px grey,-3px -3px 8px gray;   
+    border-radius: 10px;
     /* flex-wrap: wrap; */
     /* justify-content: center; 
      align-items: center; */
 }
 .chatgpt4{
     height: 55vh;
-    width: 44vh;
+    width: 43vh;
     border: 1px solid grey; 
-    box-shadow:4px 4px 5px lightgray,-4px -4px 5px lightgray;
-    border-radius: 5px;
+    box-shadow:3px 3px 8px gray,-3px -3px 8px gray;
+    border-radius: 10px;
     /* flex-wrap: wrap; */
     /* justify-content: center; 
      align-items: center; */
@@ -162,8 +162,21 @@ h4{
 display: flex;
 justify-content:center;
 align-items: center;
+padding: 10px;
 }
 #photo{
-    border-radius: 5px ;
+    border-radius: 10px 10px  0px 0px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
+.All{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+}
+#allcourses{
+    border-radius: 10px;
+    width: 200px;
+}
