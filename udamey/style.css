@@ -184,9 +184,72 @@ padding: 10px;
     border-radius: 10px;
     width: 200px;
 }
-ul{
-    display: inline-flex;
-    justify-content: center; 
-    align-items: center;
-    align-content:space-evenly;
-}
+#company { 
+     display:grid;
+     grid-template-columns:1px 1px 1px 1px 1px 1px 1px 1px;  
+     /* grid-template-rows: 50px 50px; */
+     align-content: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    justify-items: stretch;
+    grid-column-gap: 5px;
+    
+ }
+ #company svg{
+height: 100px;
+width: 130px;
+ }
+ .card1{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    position:absolute ;
+    /* z-index: 0; */
+    
+ }
+  .card2{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 2;
+    transform: rotate3d(10deg);
+ }
+ .card3{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 3;
+    transform: rotate3d(10deg);
+ }
+ .card4{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index:4;
+    transform: rotate3d(10deg);
+ }
+ .card5{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 5;
+    transform: rotate3d(10deg);
+ }
+ .card6{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 6;
+    transform: rotate3d(10deg);
+ } 
+ .card{
+    position:relative;
+    border: 2px solid black;
+    /* display: flex; */
+    /* background-color: aquamarine; */
+ }
