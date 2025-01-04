@@ -45,7 +45,7 @@ svg{
     margin-left: 20px;
 
 }
-a{
+header a{
     text-decoration: none;
     color: black;
     font-size: 1em;
@@ -96,6 +96,14 @@ h4{
     align-items: flex-start;
     margin-top: 40px;
     font-size: 20px;
+}
+.gallery a{
+    text-decoration:underline;
+    color: black;
+    font-size: 1em;
+}
+.gallery a:hover{
+    color: blue;
 }
 
 .datascience{
@@ -178,9 +186,7 @@ padding: 10px;
 #photo{
     border-radius: 10px 10px  0px 0px ;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-shrink: 6px;
+    
     
 }
 .All{
@@ -433,11 +439,12 @@ top: 0px;
 }
 footer{
     background-color: black;
-    height: 500px;
+    height: 900px;
     width: 100%;
+    color: wheat;
 }
 p{
-    color: wheat;
+   
     font-size: 2em;
     text-align: center;
     padding-top: 90px;
@@ -445,10 +452,39 @@ p{
 footer svg{
     display:inline-block;
     width: 200px;
+    
 }
 footer span{
     display: flex;   
 }
 .dot{
     margin-top: -80px;
+}
+footer marquee{
+    width: 600px;
+   margin-left: 500px;
+}
+footer a{
+    color: aliceblue;
+    /* display: block; */
+    text-decoration: none;
+    font-size: 20px;
+    line-height:30px;
+}
+.certification{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 100px;
+}
+footer h2{
+    font-size: 25px;
+}
+footer h1{
+    padding-left: 40px;
+    margin-top: 30px;
+}
+footer a:hover{
+    text-decoration: underline;
 }
