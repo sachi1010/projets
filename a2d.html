@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: black;
+        color: aliceblue;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        position: relative;    
+    }
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    grid-column-gap: 100px;
+   }
+   header h1{
+    font-size: 4em;
+    font-weight: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 3px 8px yellow;
+   }
+   header h1,i{
+    word-spacing:10px ;
+   }
+   @keyframes logo1{
+    0%{
+        transform: translateY(0p);
+
+    }
+    50%{
+        transform:translateY(50px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+   }
+.logo{
+  animation-name:logo1;
+  animation-duration: 4s;
+  animation-iteration-count:1;
+}
+header i{
+    color: orangered;
+    padding-left: 10px;  
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+</style>
+<body>
+    <header>
+        
+        <img src="./a2d image/logo.png" height="100px" width="300px" class="logo">
+        <div class="content">
+            <h1>We Build<i>people</i>  <br>Before we<br> Build pc</h1>
+            <video autoplay loop muted height="100%" width="400px">
+                <source src="./a2d image/PC.mp4">
+            </video>
+        </div>   
+    </header>
+    <section>
+        <div class="service">
+            <div class="box n1">
+                <p>
+                    OnSite Upto
+                    <b>1 Year</b>
+                    Warrenty
+                </p>
+            </div>
+            <div class="box n2">
+                <p>
+                    In House<br>
+                    <b>48 Hours</b>
+                    Testing
+                </p>
+             
+            </div>
+            <div class="box n3">
+                <p>
+                    Know The
+                    <b>Performance</b>
+                    Place The order
+                </p>
+             
+            </div>
+            <div class="box n4">
+                <p>
+                    Pan India
+                    <b>Free</b>
+                    Delivery
+                </p>  
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

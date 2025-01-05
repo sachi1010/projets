@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Tutorial</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Keyframes */
+        @keyframes moveAndColor {
+            0% {
+                to:0;
+                transform: translateX(0);
+                background-color: #3498db;
+            }
+            50% {
+
+                transform: translateX(100px);
+                background-color: #e74c3c;
+            }
+            100% {
+                top:-100px;
+                transform: translateX(0);
+                background-color: #3498db;
+            }
+        }
+
+        /* Container 1 - Individual Properties */
+        .container1 .box {
+            animation-name: moveAndColor;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+            animation-timing-function:ease-in-out  ;
+            animation-fill-mode:backwards;
+            animation-play-state: paused;
+        }
+
+        /* Container 2 - Shorthand Property */
+        .container2 .box {
+            animation: moveAndColor 3s ease-in-out 0.5s infinite alternate both;
+        }
+
+
+        .box-container {
+            position: relative;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation Tutorial</h1>
+
+    <div class="container container1">
+        <h2>Individual Properties</h2>
+        <div class="box-container">
+            <div class="box">1</div>
+            <div class="property-label">Individual Properties</div>
+        </div>
+    </div>
+
+    <div class="container container2">
+        <h2>Shorthand Property</h2>
+        <div class="box-container">
+            <div class="box">2</div>
+            <div class="property-label">Shorthand Syntax</div>
+        </div>
+    </div>
+<!-- 
+    <h2>Animation Properties Explained</h2>
+    <ul>
+        <li><strong>animation-name</strong>: moveAndColor (our defined keyframes)</li>
+        <li><strong>animation-duration</strong>: 3s (animation lasts 3 seconds)</li>
+        <li><strong>animation-delay</strong>: 0.5s (starts after 0.5 seconds)</li>
+        <li><strong>animation-iteration-count</strong>: infinite (repeats forever)</li>
+        <li><strong>animation-direction</strong>: alternate (goes back and forth)</li>
+        <li><strong>animation-timing-function</strong>: ease-in-out (smooth start/end)</li>
+        <li><strong>animation-fill-mode</strong>: both (keeps start/end styles)</li>
+    </ul>
+
+    <h3>Shorthand Syntax</h3>
+    <p>The second container uses the shorthand property:<br>
+    <code>animation: name duration timing-function delay iteration-count direction fill-mode;</code></p> -->
+</body>
+</html>

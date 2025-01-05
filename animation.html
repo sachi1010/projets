@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a192f;
+            color: #ccd6f6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .animation-box {
+            background: #112240;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #233554;
+        }
+        
+        /* Keyframes definitions */
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+        }
+        
+        @keyframes colorChange {
+            0% { background-color: #64ffda; }
+            50% { background-color: #8892b0; }
+            100% { background-color: #64ffda; }
+        }
+        
+        @keyframes flip {
+            0% { transform: perspective(400px) rotateY(0); }
+            100% { transform: perspective(400px) rotateY(360deg); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+        
+        @keyframes wave {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-10px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(10px); }
+            100% { transform: translateY(0); }
+        }
+        
+        @keyframes zoom {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes skew {
+            0% { transform: skew(0); }
+            50% { transform: skew(20deg,36deg); }
+            100% { transform: skew(0); }
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #64ffda; }
+            50% { box-shadow: 0 0 20px #64ffda; }
+            100% { box-shadow: 0 0 5px #64ffda; }
+        }
+        
+        @keyframes moveRight {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50px); }
+        }
+        
+        @keyframes moveLeft {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50px); }
+        }
+        
+        @keyframes moveUp {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50px); }
+        }
+        
+        @keyframes moveDown {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes stretch {
+            0% { transform: scaleX(1); }
+            50% { transform: scaleX(1.5); }
+            100% { transform: scaleX(1); }
+        }
+        
+        @keyframes wobble {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(15deg); }
+            50% { transform: rotate(-15deg); }
+            75% { transform: rotate(5deg); }
+        }
+        
+        /* Animation classes */
+        .slide-in {
+            animation: slideIn 1s ease-out;
+        }
+        
+        .bounce {
+            animation: bounce 1s infinite alternate;
+        }
+        
+        .rotate {
+            animation: rotate 2s linear infinite;
+        }
+        
+        .pulse {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        .color-change {
+            animation: colorChange 3s linear infinite;
+        }
+        
+        .flip {
+            animation: flip 2s ease-in-out infinite;
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .shake {
+            animation: shake 0.5s ease-in-out infinite;
+        }
+        
+        .fade-in-out {
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+        
+        .wave {
+            animation: wave 2s ease-in-out infinite;
+        }
+        
+        .zoom {
+            animation: zoom 1.5s ease-in-out infinite;
+        }
+        
+        .skew {
+            animation: skew 2s ease-in-out infinite;
+        }
+        
+        .glow {
+            animation: glow 1.5s ease-in-out infinite;
+        }
+        
+        .move-right {
+            animation: moveRight 2s ease-in-out infinite alternate;
+        }
+        
+        .move-left {
+            animation: moveLeft 2s ease-in-out infinite alternate;
+        }
+        
+        .move-up {
+            animation: moveUp 2s ease-in-out infinite alternate;
+        }
+        
+        .move-down {
+            animation: moveDown 2s ease-in-out infinite alternate;
+        }
+        
+        .spin {
+            animation: spin 1s linear infinite;
+        }
+        
+        .stretch {
+            animation: stretch 1.5s ease-in-out infinite;
+        }
+        
+        .wobble {
+            animation: wobble 1s ease-in-out infinite;
+        }
+        
+        .complex-animation {
+            animation: 
+                colorChange 4s ease-in-out infinite,
+                rotate 2s linear infinite,
+                pulse 1.5s ease-in-out infinite,
+                wobble 1s  linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #64ffda;">CSS Animation Showcase</h1>
+    <div class="grid">
+        <div class="animation-box slide-in">Slide In</div>
+        <div class="animation-box bounce">Bounce</div>
+        <div class="animation-box rotate">Rotate</div>
+        <div class="animation-box pulse">Pulse</div>
+        <div class="animation-box color-change">Color Change</div>
+        <div class="animation-box flip">Flip</div>
+        <div class="animation-box float">Float</div>
+        <div class="animation-box shake">Shake</div>
+        <div class="animation-box fade-in-out">Fade In/Out</div>
+        <div class="animation-box wave">Wave</div>
+        <div class="animation-box zoom">Zoom</div>
+        <div class="animation-box skew">Skew</div>
+        <div class="animation-box glow">Glow</div>
+        <div class="animation-box move-right">Move Right</div>
+        <div class="animation-box move-left">Move Left</div>
+        <div class="animation-box move-up">Move Up</div>
+        <div class="animation-box move-down">Move Down</div>
+        <div class="animation-box spin">Spin</div>
+        <div class="animation-box stretch">Stretch</div>
+        <div class="animation-box wobble">Wobble</div>
+        <div class="animation-box complex-animation">Combined</div>
+    </div>
+</body>
+</html>
