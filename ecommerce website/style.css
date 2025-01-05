@@ -9,7 +9,7 @@ header{
     align-items: center;
     height: 150px;
     width: 100%;
-    justify-content: center
+    justify-content: space-around;
 }
 .nav{
     list-style-type: none;
@@ -30,7 +30,7 @@ header{
     border-radius: 30px;
     text-align: center;
 }
-.nav a:hover{
+.navbar:hover{
     color: aliceblue;
     background-color: green;
     padding: 10px;
@@ -58,4 +58,91 @@ header{
 }
 header h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes hub{
+ 0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+header h1{
+   opacity: 5; 
+  animation: hub 1s ease-in;
+  animation-delay:1ms;
+}
+@keyframes list{
+    0% {
+       opacity: 0;
+       transform: translateX(50px);
+     }
+   }
+.nav{
+    opacity: 5;
+    animation:list 1s ease-in;
+  animation-delay:1ms;
+}
+.n2{
+    position: relative;
+}
+.plantsdown{
+    position: absolute;
+    display: none;
+    top:30px;
+    right: 1px;
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;   
+    border-radius: 30px;
+    background-color: rgb(35, 155, 86);
+}
+.plantsdown a{
+    display: block;
+    margin-top: 15px; 
+    padding-bottom: 10px;
+   text-align: center;
+   color:antiquewhite;
+}
+.n2:hover .plantsdown{
+    display: inline;
+}
+.line{
+    width: 200px;
+    margin-left: 25px;
+}
+.plantsdown a:hover{
+    font-size: 22px;
+    color: rgb(247, 220, 111);
+}
+.n3{
+    position: relative;
+}
+.seedsdown{
+    position: absolute;
+    display: none;
+    top:30px;
+    right: 1px;
+    height: 200px;
+    width: 250px;
+    border: 1px solid black;   
+    border-radius: 30px;
+    background-color: rgb(35, 155, 86);
+}
+.seedsdown a{
+    display: block;
+    margin-top: 15px; 
+    padding-bottom: 10px;
+   text-align: center;
+   color:antiquewhite;
+}
+.n3:hover .seedsdown{
+    display: inline;
+}
+.line{
+    width: 200px;
+    margin-left: 25px;
+}
+.seedsdown a:hover{
+    font-size: 22px;
+    color: rgb(247, 220, 111);
 }
