@@ -66,8 +66,8 @@ header{
 
 header h1{
    opacity: 5; 
-  animation: hub 1s ease-in;
-  animation-delay:1ms;
+  animation: hub 0.8s ease-in;
+  /* animation-delay:1ms; */
   font-size:20px;
   line-height:25px;
   letter-spacing: 2px;
@@ -80,8 +80,8 @@ header h1{
    }
 .nav{
     opacity: 5;
-    animation:list 1s ease-in;
-  animation-delay:1ms;
+    animation:list 0.5s ease-in;
+  /* animation-delay:1ms; */
 }
 .n2{
     position: relative;
@@ -180,9 +180,11 @@ header h1{
     color: rgb(247, 220, 111);
 }
 body{
-    background-color: rgba(20, 247, 114, 0.5);
+    background-color:blanchedalmond;
 }
-
+hr{
+    color: green;
+}
 @keyframes logo{
     0% {
        opacity: 0;
@@ -220,5 +222,83 @@ header img{
 }
 .profilephoto img{
     border-radius: 20px;
-    box-shadow: 4px 4px 6px green;
+    box-shadow: 4px 4px 6px green, -4px -4px 6px green;
+    animation: profile 1.5s ease-in-out infinite;
 }
+@keyframes profile{
+    0% {
+         box-shadow: 0 0 10px goldenrod;
+         transform: scaleX(0.9); 
+        }
+    50% { 
+        box-shadow: 0 0 40px goldenrod;
+        transform: scaleX(1);
+     }
+    100% {
+         box-shadow: 0 0 10px goldenrod;
+         transform: scaleX(0.9);
+         }
+}
+.welcome{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: orange;
+    animation: welcome 1.5s ease-in 1;
+   
+}
+@keyframes welcome{
+    0% {
+       
+         transform: translateX(-100%) ;
+        }
+    
+    100% {
+       
+         transform: translatex(0);
+         }
+}
+.shopping{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 50px ;
+}
+.shop{
+    height: 500px;
+    width: 400px;
+    border: 2px solid orange;
+    border-radius: 0px 20px 0px 20px;
+    text-align: center;
+    
+    
+}
+.shop:hover{
+    box-shadow: 3px 3px 5px orange;
+}
+.our{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.shop img{
+    border-radius: 0px 20px 0px 0px;
+}
+.shopbtn{
+    height: 40px;
+    width: 150px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: 200px;
+    color: antiquewhite;
+}
+.shopbtn:hover{
+    color:orange;
+}
+.checked{
+    color: yellow;
+    border: ;
+}
+
