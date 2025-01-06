@@ -38,27 +38,25 @@ header{
     border-radius: 10px;
     transition: 0.7s;
 }
-.n9{
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-}
 .n10{
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px;
 }
-.n9:hover{
-    color: green;
-    background-color: cornsilk;
+.n11{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
 }
 .n10:hover{
     color: green;
+    background-color: cornsilk;
+}
+.n11:hover{
+    color: green;
     background-color:cornsilk ;
 }
-header h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 @keyframes hub{
  0% {
     opacity: 0;
@@ -70,6 +68,9 @@ header h1{
    opacity: 5; 
   animation: hub 1s ease-in;
   animation-delay:1ms;
+  font-size:20px;
+  line-height:25px;
+  letter-spacing: 2px;
 }
 @keyframes list{
     0% {
@@ -145,4 +146,79 @@ header h1{
 .seedsdown a:hover{
     font-size: 22px;
     color: rgb(247, 220, 111);
+}
+.n4{
+    position: relative;
+}
+.potsdown{
+    position: absolute;
+    display: none;
+    top:30px;
+    right: 1px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;   
+    border-radius: 30px;
+    background-color: rgb(35, 155, 86);
+}
+.potsdown a{
+    display: block;
+    margin-top: 15px; 
+    padding-bottom: 10px;
+   text-align: center;
+   color:antiquewhite;
+}
+.n4:hover .potsdown{
+    display: inline;
+}
+.line{
+    width: 200px;
+    margin-left: 25px;
+}
+.potsdown a:hover{
+    font-size: 22px;
+    color: rgb(247, 220, 111);
+}
+body{
+    background-color: rgba(20, 247, 114, 0.5);
+}
+
+@keyframes logo{
+    0% {
+       opacity: 0;
+       transform: translateY(-50px);
+     }
+     
+   }
+header img{
+    opacity: 5;
+    animation:logo 1s ease-in;
+  animation-delay:1ms;
+}
+.profilephoto{
+    height: 500px;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex; 
+    align-items:center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content:space-around;
+}
+.photocontent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+.profilephoto h1{
+    font-size: 4em;
+    text-shadow: 3px 3px 5px green;
+    color:rgb(22, 113, 22);
+    
+}
+.profilephoto img{
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px green;
 }
