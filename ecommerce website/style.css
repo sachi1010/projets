@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 header{
     background-color:rgba(35, 155, 86,0.5);
     display: flex;
@@ -180,14 +181,15 @@ header h1{
     font-size: 22px;
     color: rgb(247, 220, 111);
 }
+/* body */
 body{
     background-color:blanchedalmond;
-    /* position: relative;
-    */
+    
 }
 hr{
     color: green;
 }
+/* logo animation */
 @keyframes logo{
     0% {
        opacity: 0;
@@ -200,6 +202,7 @@ header img{
     animation:logo 1s ease-in;
   animation-delay:1ms;
 }
+/* profile img */
 .profilephoto{
     height: 500px;
     width: 90%;
@@ -224,6 +227,7 @@ header img{
     color:rgb(22, 113, 22);
     
 }
+/* profile animation */
 .profilephoto img{
     border-radius: 20px;
     box-shadow: 4px 4px 6px green, -4px -4px 6px green;
@@ -243,6 +247,7 @@ header img{
          transform: scaleX(0.9);
          }
 }
+/* welcome */
 .welcome{
     font-size: 3em;
     text-transform: uppercase;
@@ -262,6 +267,7 @@ header img{
          transform: translatex(0);
          }
 }
+/* product shopping */
 .shopping{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -282,16 +288,19 @@ header img{
 .shop:hover{
     box-shadow: 3px 3px 5px orange;
 }
+/* product section */
 .our{
-    display: flex;
+     display: flex; 
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
+/* image */
 .shop img{
     border-radius: 0px 20px 0px 0px;
 }
+/* shop btn */
 .shopbtn{
     height: 40px;
     width: 150px;
@@ -303,27 +312,28 @@ header img{
 .shopbtn:hover{
     color:orange;
 }
+/* star */
 .checked{
     color: chocolate;
 }
+/* rupees */
 .shop p{
     font-size: 20px;
 }
+
+/* socialmedia */
  .media{
-     /* height: 400px;
-    width: 80px;
-    border: 1px solid black;  */
+    
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    /* background-color:rgba(85, 107, 47, 0.545); */
+    
 } 
 .media i{
-    font-size: 3em;
+    font-size: 2em;
 }
 .socialmedia{
-/* position: absolute; */
 position: fixed;
 left:94%;
 display: flex;
@@ -360,4 +370,81 @@ padding: 15px;
 }
 .fa-facebook:hover{
     color: dodgerblue;
+}
+
+/* summary */
+.Details{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 25px;
+    /* border: 2px solid black; */
+    align-items: center;
+   text-align: center;
+   list-style-type: none;
+}
+/* .summary{
+    position: relative;
+    top: 100px;
+} */
+/* bold heading animate */
+.d1,.d2{
+   
+    animation: right 0.4s ease-in 1;
+}
+@keyframes right {
+    0%{
+        transform: translateX(100%);
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+}
+.d3,.d4{
+   
+    animation: left 0.4s ease-in 1;
+}
+@keyframes left {
+    0%{
+        transform: translateX(-100%);
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+}
+.d5,.d6{
+   
+    animation: shake 0.4s ease-in 1;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(100%);
+       
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+}
+footer{
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+.footernav a{
+    display: block;
+    color:azure;
+    font-size: 20px;
+    padding: 10px;
+}
+.contactinfo{
+    font-size: 20px;
+   
 }
