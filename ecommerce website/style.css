@@ -340,7 +340,7 @@ display: flex;
 }
 .fa-whatsapp{
     color: green;
-    padding: 20px;
+    padding: 15px;
 }
 .fa-facebook{
 color: blue;
@@ -348,7 +348,7 @@ padding: 15px;
 }
 .fa-instagram{
     color: rgb(241, 29, 64);
-    padding: 20px;
+    padding: 15px;
 }
 .fa-youtube{
     color: red;
@@ -435,16 +435,40 @@ footer{
     color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
+    align-items: center;
     
 }
 .footernav a{
     display: block;
     color:azure;
     font-size: 20px;
-    padding: 10px;
+    line-height: 40px;
+    letter-spacing: 1px;
 }
 .contactinfo{
     font-size: 20px;
-   
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.Customer a{
+    display: block;
+    color:azure;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.code{
+    margin-left: 150px;
+}
+marquee h1{
+display:inline-block ;
+color: blue;
+}
+marquee b{
+    color: green;
+}
+.name{
+    color: blue;
 }
