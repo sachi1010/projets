@@ -35,7 +35,7 @@ header{
 .navbar:hover{
     color: aliceblue;
     background-color: green;
-    padding: 10px;
+    /* padding: 10px; */
     border: 1px solid black;
     border-radius: 10px;
     transition: 0.7s;
@@ -181,3 +181,45 @@ header h1{
     font-size: 22px;
     color: rgb(247, 220, 111);
 }
+/* .houseplants{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.houseplants-text{
+    display: flex;
+    font-size: 20px;
+} */
+/* .houseplants-img .houseplants{
+    height: 500px;
+    width:400px ;
+    border: 2px solid orange;
+    border-radius: 0px 30px 0px 30px;
+    text-align: center;
+    background-color:rgba(35, 155, 86,0.5);
+} */
+ /* .houseplants-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
+    justify-items: center;
+}  */
+/* .houseplants img{
+    border-radius: 0px 30px 0px 0px;
+} */
+body{
+    background-color:blanchedalmond;
+}
+.items div{
+    border: 2px solid orange;
+    height: 500px;
+    width: 350px;
+    background-color: rgb(81, 176, 81);
+}
+ .plantshopping{
+     display: grid;
+    grid-gap: 30px 20px; 
+    justify-content: center;
+    
+} 

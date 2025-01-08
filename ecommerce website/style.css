@@ -17,9 +17,11 @@ header{
     list-style-type: none;
     display: flex;
     align-items: center;
+   
 }
 .item{
     margin: 10px;
+    
 }
 .nav a{
     text-decoration: none;
@@ -35,7 +37,7 @@ header{
 .navbar:hover{
     color: aliceblue;
     background-color: green;
-    padding: 10px;
+    padding: 5px; 
     border: 1px solid black;
     border-radius: 10px;
     transition: 0.7s;
