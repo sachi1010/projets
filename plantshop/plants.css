@@ -79,6 +79,8 @@ body{
 /* header box shadow */
 header{
     box-shadow: 5px 0px 7px lawngreen;
+    width: 100%;
+  
 }
 /* a tag margin style */
 .nav-item{
@@ -117,4 +119,47 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.navbar-brand{
+    mix-blend-mode:color-burn;
+    
+}
+#summary{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    background-color:rgb(40, 180, 99); 
+    width: 100%;
+}
+.footernav a{
+    display:block;
+    color: azure;
+    line-height: 30px;
+}
+.Customer a{
+    display: block;
+    color: azure;
+    line-height: 30px;
+}
+.contactinfo p,address{
+    color: azure;
+}
+.socialmedia i{
+    /* color: azure; */
+    font-size: 30px;
+}
+.bi-youtube{
+    color: red;
+}
+.bi-facebook{
+    color: blue;
+}
+.bi-instagram{
+    color: rgb(228, 15, 157);
+}
+.bi-whatsapp{
+    color: greenyellow;
 }
