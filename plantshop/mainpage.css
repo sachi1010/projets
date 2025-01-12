@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* a tag style */
+.navbar-nav .nav-link{
+    color:black;
+    font-weight:600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+/* a tag hover style */
+.navbar-nav .nav-link:hover{
+    color: wheat;
+      /* border: 1px solid yellowgreen;  */
+    background-color: rgb(2, 81, 36);   
+}
+/* a tag active style */
+.navbar-nav .nav-link:focus{
+color:cornsilk !important;
+background-color: rgb(2, 81, 36);
+}
+/* brand name style */
+.navbar-brand{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black !important;
+    font-weight: 900;
+}
+/* header style */
+.navbar{
+    background-color:rgb(40, 180, 99);
+}
+/* dropdown menu style */
+.dropdown-menu{
+    background-color:rgba(40, 180, 99,0.6) !important;
+    
+}
+/* dropsown item style */
+.dropdown-item{
+    color:black  !important;
+    font-weight: 500 !important;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+/* dropdown item hover style */
+.dropdown-item:hover{
+    background-color: blue !important;
+    color: aliceblue !important;
+}
+/* body bg */
+body{
+    background-color:rgba(255, 235, 205, 0.775) !important;
+}
+/* search box */
+#search{
+    margin-left: 50px;
+} 
+/* box shadow */
+.form-control{
+    box-shadow: 3px 3px 5px gray;
+}
+.btn{
+    box-shadow: 3px 3px 5px gray;
+}
+/* login */
+.bi-person-circle{
+    color: black;
+}
+.bi-person-circle:hover{
+    color:white;
+}
+.personlogo{
+    display: flex;
+    justify-content: center;
+}
+/* header box shadow */
+header{
+    box-shadow: 5px 0px 7px lawngreen;
+    width: 100%;
+  
+}
+/* a tag margin style */
+.nav-item{
+    margin-left: 5px;
+}
+.carousel-caption h1{
+    font-size: 3em;
+    animation: plant 1s ease-in 1;
+}
+@keyframes plant{
+    0% {transform: transitionX(-100%);}
+    100%{transform:transitionX(0) ;}
+}
+.bi-star-fill{
+    color: rgb(201, 146, 7);
+}
+.bi-star-half{
+    color: rgb(198, 143, 4);
+}
+.card{
+    background-color: rgba(143, 188, 143, 0.534) !important;
+    
+}
+.card-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+} 
+#shopbtn{
+    color:aliceblue;
+    font-weight: 500;
+}
+#shopbtn:hover{
+    color: rgb(0, 0, 0);
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar-brand{
+    mix-blend-mode:color-burn;
+    
+}
+#summary{
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 1px;
+}
+footer{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    background-color:rgb(40, 180, 99); 
+    width: 100%;
+}
+.footernav a{
+    display:block;
+    color: azure;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.Customer a{
+    display: block;
+    color: azure;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.contactinfo p,address{
+    color: azure;
+    letter-spacing: 1px;
+}
+.socialmedia i{
+    /* color: azure; */
+    font-size: 30px;
+}
+.bi-youtube{
+    color: red;
+}
+.bi-facebook{
+    color: blue;
+}
+.bi-instagram{
+    color: rgb(228, 15, 157);
+}
+.bi-whatsapp{
+    color: greenyellow;
+}

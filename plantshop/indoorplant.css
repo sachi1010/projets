@@ -86,19 +86,9 @@ header{
 .nav-item{
     margin-left: 5px;
 }
-.carousel-caption h1{
-    font-size: 3em;
-    animation: plant 1s ease-in 1;
-}
-@keyframes plant{
-    0% {transform: transitionX(-100%);}
-    100%{transform:transitionX(0) ;}
-}
-.bi-star-fill{
-    color: rgb(201, 146, 7);
-}
-.bi-star-half{
-    color: rgb(198, 143, 4);
+.navbar-brand{
+    mix-blend-mode:color-burn;
+    
 }
 .card{
     background-color: rgba(143, 188, 143, 0.534) !important;
@@ -120,13 +110,11 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.navbar-brand{
-    mix-blend-mode:color-burn;
-    
+.bi-star-fill{
+    color: rgb(201, 146, 7);
 }
-#summary{
-    display: flex;
-    flex-wrap: wrap;
+.bi-star-half{
+    color: rgb(198, 143, 4);
 }
 footer{
     /* display: grid;

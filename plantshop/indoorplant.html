@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Hub</title>
+    <link rel="icon" href="./images/tree logo.png">
+    <link rel="stylesheet" href="indoorplant.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div>
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="Bootstrap" width="150" height="100">
+                    </a>
+                </div>
+                <!-- title -->
+                <!-- <h1 class="navbar-brand" href="#">GREEN<br>HUB</h1> -->
+                <!-- toggler icon -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navigate -->
+                <div class="collapse navbar-collapse ms-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+                        <!-- l1 -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <!-- l2 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="#">outdoor Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Flower Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Medicinal Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Hanging Plants</a></li>
+                            </ul>
+                        </li>
+                        <!-- l3 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Seeds </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Flower Seeds</a></li>
+                                <li><a class="dropdown-item" href="#">Vegetable Seeds</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits Seeds</a></li>
+                                <li><a class="dropdown-item" href="#">Herbal Seeds</a></li>
+                            </ul>
+                        </li>
+                        <!-- l4 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pots & Planters</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Plastic Pots</a></li>
+                                <li><a class="dropdown-item" href="#">Wooden Pots</a></li>
+                                <li><a class="dropdown-item" href="#">Ceramic Pots</a></li>
+                                <li><a class="dropdown-item" href="#">Sand Pots</a></li>
+                                <li><a class="dropdown-item" href="#">Grow Bags</a></li>
+                                <li><a class="dropdown-item" href="#">Pots Stands</a></li>
+                            </ul>
+                        </li>
+                        <!-- l5 -->
+                        <li class="nav-item" id="Kits">
+                            <a class="nav-link" aria-current="page" href="#">Gardening Kits</a>
+                        </li>
+                        <!-- l6 -->
+                        <li class="nav-item" id="plantabout">
+                            <a class="nav-link" aria-current="page" href="#">Abouts Plants</a>
+                        </li>
+                        <!-- l7 -->
+                        <li class="nav-item" id="about">
+                            <a class="nav-link" aria-current="page" href="#">About Us</a>
+                        </li>
+
+                    </ul>
+                    <!-- searchbox -->
+                    <form class="d-flex ms-10" role="search" id="search">
+                        <input class="form-control me-1 border-dark" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-primary border-dark text-light" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+                    <!-- login -->
+                    <div class="personlogo">
+                        <button class="btn m-2 bg-primary text-light" id="person"><i
+                                class="bi bi-person-circle"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- profile -->
+    <section>
+        <div class="container mt-5">
+            <img src="./images/guernsey-house-plants.jpg" alt="image" height="500px" width="100%">
+        </div>
+    </section>
+    <!--cards  -->
+    <section>
+        <div class="row mt-5 mx-2 p-1">
+            <!-- img 1 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/plant img.avif" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p> price:<i class="bi bi-currency-rupee"></i><b>65</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- img2 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img1.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price: <i class="bi bi-currency-rupee"></i><b>70</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img3 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img2.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price: <i class="bi bi-currency-rupee"></i><b>75</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--img4  -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img3.webp" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price: <i class="bi bi-currency-rupee"></i><b>35</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img5 -->
+            <!-- <div class="row mt-5 mx-2 p-1"> -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img4.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price: <i class="bi bi-currency-rupee"></i><b>65</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img6 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img5.avif" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>55</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img7 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img6.webp" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price: <i class="bi bi-currency-rupee"></i><b>45</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img8 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img7.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>40</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--img9  -->
+            <!-- <div class="row mt-5 mx-2 p-1"> -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img7.webp" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>30</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img10 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img9.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>50</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--img11 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img10.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>85</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img12 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img11.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>25</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img13 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/img12.webp" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>55</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--img14  -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/fruit-plant.webp" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>100</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- img15 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/flower img.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>50</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- img16 -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./images/brinjal-500x550-1.jpg" alt="" class="card-image-top rounded" height="250px">
+                    <div class="card-body">
+                        <h6 class="card-title">Lots of Plants Available Here</h6>
+                        <p class="card-text">
+                        <p>price:<i class="bi bi-currency-rupee"></i><b>20</b></p>
+                        <span><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            Ratings(5,55,000)
+                        </span></p>
+                        </p>
+                        <a href="#" class="btn btn-success" id="shopbtn">Shop Now<i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer section -->
+    <footer>
+        
+        <div class="row mt-5 mx-2 p-1">
+            <div class="footernav   col-lg-3 col-md-3 col-sm-12 ">
+              <h3>Our Store:</h3>
+              <a href="#" id="home">Home</a>
+              <a href="">About</a>
+              <a href="">products</a>
+              <a href="">Product About</a>
+              <a href="">Contact Us</a>
+          </div>
+
+          <div class="contactinfo col-lg-3  col-md-3 col-sm-12">
+              <h3>Contact Details:</h3>
+              <p>Phone: 1234567890</p>
+              <p>Email:greenhub@gmail.com</p>
+              <address>
+                    Address:
+                    <br>123 Main St,<br> 
+                     Mayiladuthurai,<br>
+                     Tamil Nadu,<br>
+                     609003.    
+               </address>
+          </div>
+         
+          <div class="Customer   col-lg-3 col-md-3 col-sm-12">
+              <h3>Customer Care</h3>
+              <a href="">Track Your Order</a>
+              <a href="">Shipping Policy</a>
+              <a href="">Terms and Conditions</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Refund policy</a>
+          </div>
+
+          <div class="socialmedia  col-lg-3 col-md-3 col-sm-12">
+            <h3>Follow Us</h3>
+            <a href=""><i class="bi bi-youtube m-2"></i></a>
+            <a href=""><i class="bi bi-whatsapp m-2"></i></a>
+            <a href=""><i class="bi bi-instagram m-2"></i></a>
+            <a href=""><i class="bi bi-facebook m-2"></i></a>
+          </div >
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
