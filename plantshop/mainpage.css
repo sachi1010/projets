@@ -68,6 +68,7 @@ body{
 /* login */
 .bi-person-circle{
     color: black;
+    font-size: 20px;
 }
 .bi-person-circle:hover{
     color:white;
@@ -166,4 +167,12 @@ footer{
 }
 .bi-whatsapp{
     color: greenyellow;
+}
+.bi-cart-plus-fill{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+.bi-cart-plus-fill:hover{
+    color:white;
 }
