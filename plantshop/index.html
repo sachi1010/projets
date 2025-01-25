@@ -14,6 +14,7 @@
 <!-- nav bar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+              
                 <div >
  <!-- logo -->
                     <a class="navbar-brand" href="#">
@@ -31,6 +32,7 @@
                         <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
 <!-- l1 -->
                             <li class="nav-item dropdown">
+                              
                                 <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
                             </li>
 <!-- l2 -->
@@ -39,11 +41,11 @@
                                  Plants </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/indoorplant.html">Indoor Plants</a></li>
-                                        <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/plant.html">outdoor Plants</a></li>
-                                        <li><a class="dropdown-item" href="#">Flower Plants</a></li>
-                                        <li><a class="dropdown-item" href="#">Fruits Plants</a></li>
-                                        <li><a class="dropdown-item" href="#">Medicinal Plants</a></li>
-                                        <li><a class="dropdown-item" href="#">Hanging Plants</a></li>
+                                        <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/outdoorplant.html">outdoor Plants</a></li>
+                                        <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/flower.html">Flower Plants</a></li>
+                                        <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/fruit.html">Fruits Plants</a></li>
+                                        <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/medicinal.html">Medicinal Plants</a></li>
+                                        <li><a class="dropdown-item" href="http://127.0.0.1:5501/plantshop/hanging.html">Hanging Plants</a></li>
                                      </ul>
                              </li>
 <!-- l3 -->
@@ -72,7 +74,7 @@
                              </li>
 <!-- l5 -->
                              <li class="nav-item" id="Kits">
-                                <a class="nav-link" aria-current="page" href="#">Gardening Kits</a>
+                                <a class="nav-link" aria-current="page" href="http://127.0.0.1:5501/plantshop/kits/kit.html">Gardening Kits</a>
                             </li>
 <!-- l6 -->
                             <li class="nav-item" id="plantabout">
@@ -90,9 +92,43 @@
                                     <button class="btn btn-outline-primary border-dark text-light" type="submit"><i class="bi bi-search"></i></button>
                             </form>
 <!-- login -->
- <div class="personlogo">
-    <button class="btn m-2 bg-primary text-light" id="person"><i class="bi bi-person-circle"></i></button>
- </div>
+<div class="personlogo">
+
+  <button class="btn m-2 bg-primary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal" id="person"><i class="bi bi-person-circle"></i></button>
+
+</div>
+<!-- Modal -->
+<div class="modal fade w-100" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="m-5  text-white p-2 rounded-2" id="Register">
+            <h1 class="text-center">Register Form</h1>
+            <form action="">
+                <div class="form-group mb-3" id="labeltext">
+                    <label for="username">UserName</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group mb-3" id="labeltext">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" name="check" id="">
+                    <label>Remember Me?<a href="#" class="text-white">Forgot Password</a></label>
+                </div>
+
+                <div class="form-group mb-3 submit" id="labeltext">
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn">Reset</button>
+                </div>
+            </form>
+        </div> 
+    </div>
+  </div>
+</div>
+
  <div>
   <button class="btn m-2 bg-primary text-light" id="cart"><i class="bi bi-cart-plus-fill"></i></button>
  </div>

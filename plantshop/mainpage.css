@@ -103,6 +103,7 @@ header{
 }
 .card{
     background-color: rgba(143, 188, 143, 0.534) !important;
+    box-shadow: 3px 3px 5px gray,-3px -3px 5px gray ;
     
 }
 .card-title{
@@ -175,4 +176,24 @@ footer{
 }
 .bi-cart-plus-fill:hover{
     color:white;
+}
+.modal-content{
+    background-image: url(./images/login\ page\ bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#labeltext input{
+    background-color: rgba(143, 188, 143, 0.285) !important;
+    color:whitesmoke;
+}
+#labeltext button{
+    background-color: rgba(143, 188, 143, 0.647) !important;
+    margin-left: 20px;
+    border: 1px solid greenyellow;
+    color: azure;
+}
+.submit{
+    margin-left: 100px;
 }
